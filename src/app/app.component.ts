@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -6,7 +8,8 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  styleUrl: './app.component.less',
+
 })
 export class AppComponent {
   title = 'DigitalClock-angular';
